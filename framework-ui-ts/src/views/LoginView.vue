@@ -38,20 +38,28 @@
           label="输入密码"
           placeholder="输入密码"/>
 
-        <v-btn type="submit" />
+        <v-btn rounded block color="primary" :loading="loading" x-large @click="onClickLogin">
+          登录
+        </v-btn>
+
       </v-form>
     </v-container>
   </div>
 </template>
 
 <script>
-export default {
-  name: "LoginView",
-  data(){
-    return {
-      showPassowrd: false,
-      password: null
-    }
+import {Component, Vue} from "vue-property-decorator";
+
+@Component({
+})
+export default class LoginView extends Vue {
+  name = "LoginView";
+  showPassowrd = false;
+  password = null;
+  loading = false;
+  onClickLogin(){
+    this.loading = true;
+    return false;
   }
 }
 </script>
