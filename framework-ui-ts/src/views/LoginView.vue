@@ -1,7 +1,7 @@
 <template>
-  <div class="d-lg-flex" style="flex: 1 2">
+  <div class="d-lg-flex page">
     <v-container class="bg-primary flex-column padding">
-      <label class=" app-name">
+      <label class="app-name">
         系统名称
       </label>
       <v-row no-gutters>
@@ -73,5 +73,12 @@ export default class LoginView extends Vue {
 }
 .padding{
   padding: 90px 48px;
+}
+.page{
+  width: 100%;
+  height: 100%;
+}
+.page *:first-child{
+  width: 45%;
 }
 </style>
