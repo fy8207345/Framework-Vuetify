@@ -65,9 +65,6 @@ export default class LoginView extends Vue {
 </script>
 
 <style scoped>
-.margin{
-  margin: 90px 48px;
-}
 .margin-top{
   margin-top: 48px;
 }
