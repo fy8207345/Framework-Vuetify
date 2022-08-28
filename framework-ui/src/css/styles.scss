@@ -1,0 +1,32 @@
+.h-100{
+  height: 100%;
+}
+.w-100{
+  width: 100%;
+}
+div{
+  display: flex;
+}
+.bg-primary{
+  background-color: var(--v-primary-base);
+  color: var(--v-onPrimary-base);
+}
+.bg-secondary{
+  background-color: var(--var-secondary-base);
+  color: var(--v-onSecondary-base);
+}
+.primary{
+  color: var(--v-primary-base)
+}
+.secondary{
+  color: var(--var-secondary-base)
+}
+.onPrimary{
+  color: var(--v-onPrimary-base)
+}
+.onSecondary{
+  color: var(--v-onSecondary-base)
+}
+.app-name{
+  font-size: 20px;
+}

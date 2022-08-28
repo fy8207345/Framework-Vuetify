@@ -1,7 +1,9 @@
 <template>
   <div class="flex h-100 w-100">
     <div class="h-100 w-100 flex bg-primary">
-      1
+      <div class="margin app-name">
+        系统名称
+      </div>
     </div>
     <div class="h-100 w-100 flex">
       2
@@ -16,5 +18,7 @@ export default {
 </script>
 
 <style scoped>
-
+.margin{
+  margin: 90px 48px;
+}
 </style>
