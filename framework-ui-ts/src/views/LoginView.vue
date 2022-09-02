@@ -1,18 +1,18 @@
 <template>
   <div class="d-lg-flex page">
-    <v-container class="bg-primary flex-column padding">
+    <v-container class="primary flex-column padding item">
       <label class="app-name">
         系统名称
       </label>
       <v-row no-gutters>
         <v-col :cols="24" :lg="24">
-          <label class="margin-top app-name">
+          <label class="margin-top app-name primary-text">
             登录
           </label>
         </v-col>
       </v-row>
     </v-container>
-    <v-container class="flex-column padding">
+    <v-container class="flex-column padding item">
       <label class=" app-name" >登录</label>
       <v-form class="margin-top">
         <v-text-field
@@ -38,11 +38,19 @@
           label="输入密码"
           placeholder="输入密码"/>
 
+        <v-row>
+          <v-col :cols="12">
+            <v-checkbox id="resetPassword"/>
+            <label for="resetPassword" class="align-self-center">忘记密码？</label>
+          </v-col>
+        </v-row>
+
         <v-btn rounded block color="primary" :loading="loading" x-large @click="onClickLogin">
           登录
         </v-btn>
 
       </v-form>
+
     </v-container>
   </div>
 </template>
@@ -75,7 +83,7 @@ export default class LoginView extends Vue {
   width: 100%;
   height: 100%;
 }
-.page *:first-child{
+.page .item:first-child{
   width: 45%;
 }
 </style>

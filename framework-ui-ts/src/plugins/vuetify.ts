@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
 import zhHans from './locales/zh-Hans'
+import '@/css/theme.css'
 
 Vue.use(Vuetify)
 
@@ -22,15 +23,15 @@ const vuetify : Vuetify = new Vuetify({
     },
     themes: {
       light: {
-        primary: "#3253DC",
-        secondary: "#03DAC6",
-        accent: '#82B1FF',
-        error: '#FF5252',
+        primary: "#6750A4",
+        secondary: "#625B71",
+        accent: '#7D5260',
+        error: '#B3261E',
         info: '#2196F3',
         success: '#4CAF50',
         warning: '#FFC107',
         onPrimary: "#FFFFFF",
-        onSecondary: "#000000",
+        onSecondary: "#FFFFFF",
       }
     }
   }
