@@ -31,7 +31,7 @@
           validate-on-blur
           counter
           outlined
-          :append-icon="showPassowrd ? 'mdi-eye' : 'mdi-eye-off'"
+          :append-icon="showPassowrd ? 'fa-eye' : 'fa-eye-slash'"
           :type="showPassowrd ? 'text' : 'password'"
           @click:append="showPassowrd = !showPassowrd"
           :height="36"
